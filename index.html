@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Calendar_Clock_Weather</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="glow-effect"></div>
+    <div class="glow-effect"></div>
+
+    <div class="dashboard">
+        <div class="clock-container">
+            <div class="clock-card">
+                <div class="clock" id="clock"></div>
+                <div class="date-display" id="date"></div>
+                <div class="battery-indicator">
+                    <span id="battery-level">100%</span>
+                    <span class="battery-icon" id="battery-icon">🔋</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-panel weather">
+            <div class="panel-title">Weather</div>
+            <div class="weather-content">
+                <div class="temperature" id="temperature">24°C</div>
+                <div class="weather-icon" id="weather-icon">☀️</div>
+            </div>
+            <div class="weather-details" id="weather-details">Sunny, feels like 26°C</div>
+        </div>
+
+        <div class="info-panel calendar">
+            <div class="panel-title">Calendar</div>
+            <div class="calendar-grid" id="calendar-header"></div>
+            <div class="calendar-grid" id="calendar-days"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
